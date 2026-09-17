@@ -55,11 +55,4 @@ npm test
 npm run build
 ```
 
-Các smoke suite theo phân hệ có sẵn dưới dạng `npm run test:<module>` trong
-`package.json` (ví dụ `test:parcel`, `test:resident`, `test:billing`).
 
-## Quy ước repository
-
-README là tài liệu duy nhất được giữ trong repository. Các tài liệu Markdown
-khác được lưu ngoài project tại `..\documents\greencity-project`; `.env`,
-`.venv`, `node_modules` và `dist` không đưa lên GitHub.
