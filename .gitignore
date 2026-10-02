@@ -1,5 +1,14 @@
-# Project reference documents and personal-data files stay local.
+# This repository publishes source code, configuration, and test fixtures only.
 documents/
+docs/
+*.md
+*.doc
+*.docx
+*.pdf
+*.ppt
+*.pptx
+*.puml
+*.drawio
 
 # Microsoft Office temporary files
 ~$*
@@ -23,11 +32,35 @@ Tài_nguyên.txt
 __pycache__/
 *.py[cod]
 .pytest_cache/
+.pytest-temp*/
 .test-runtime/
 .private-evidence/
+.review/
 .coverage
 htmlcov/
 *.log
 
-# Project documentation is kept outside the repository under ..\documents\greencity-project.
-*.md
+# Reproducible deployment manifests are source-controlled; local secret values
+# under deploy/secrets remain ignored by their explicit filenames.
+!deploy/
+!deploy/**
+deploy/**/__pycache__/
+deploy/**/*.py[cod]
+deploy/secrets/*
+
+# Raw GreenCity datasets are local-only and may contain personal data.
+documents/greencity-project/excel-data/
+documents/greencity-project/data_that/
+
+# Source checksums are local metadata for restricted real workbooks.
+documents/greencity-project/DATA_SOURCE_MANIFEST.json
+
+# Outputs derived from restricted raw data stay local, including failed staging.
+**/local_validation_pack/
+**/local_validation_manifest.json
+**/approved_pack/
+**/approved_manifest.json
+**/.approved_pack_tmp_*/
+
+# Local work files and submission-data reports may contain row-level metadata.
+.local/
