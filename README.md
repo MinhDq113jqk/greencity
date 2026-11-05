@@ -209,17 +209,3 @@ sạch, hãy bỏ cluster/database disposable của lần trước và chạy l�
 lý, tạo database trống mới rồi chạy `scripts.migrate upgrade head` thay vì xóa
 bảng bằng SQL tay.
 
-## Walkthrough demo theo vai trò
-
-Trước buổi bảo vệ, dùng
-[DEMO_WALKTHROUGH.md](documents/greencity-project/DEMO_WALKTHROUGH.md) để đi lần
-lượt GF-01..08. Tài liệu chỉ mô tả vai trò, thao tác và kết quả mong đợi; không
-chứa mật khẩu hay credential demo. Credential được provision riêng ngoài Git.
-
-## Tài liệu hoàn tất bài nộp
-
-- [Kế hoạch hoàn tất code](documents/greencity-project/FINAL_CODE_SUBMISSION_PLAN.md).
-- [20 task hoàn tất code](documents/greencity-project/FINAL_CODE_SUBMISSION_20_TASKS.md).
-- [Checklist kiểm thử cuối](documents/greencity-project/FINAL_SUBMISSION_CHECKLIST.md).
-- [Walkthrough demo theo vai trò](documents/greencity-project/DEMO_WALKTHROUGH.md).
-- [Tài liệu dự án](documents/greencity-project/).
